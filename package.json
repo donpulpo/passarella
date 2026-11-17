@@ -1,0 +1,23 @@
+{
+  "name": "passarella",
+  "version": "1.0.0",
+  "description": "The passarel\u00b7la website",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donpulpo/passarella.git"
+  },
+  "bugs": {
+    "url": "https://github.com/donpulpo/passarella/issues"
+  },
+  "homepage": "https://github.com/donpulpo/passarella#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8"
+  },
+  "private": true,
+  "type": "module"
+}

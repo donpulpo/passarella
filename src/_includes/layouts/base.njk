@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ metaTitle or title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+{% if banner !== false %}<div class="banner"><div class="container"><a href="{{ site.banner.url }}">{{ site.banner.text }}</a></div></div>{% endif %}
+<header class="bar">
+<div class="container bar__inner">
+<a class="brand" href="/" aria-label="{{ site.name }}, home">{% include "partials/mark.njk" %}<span class="wordmark">passarel<b>·</b>la</span></a>
+<button class="btn btn--quiet btn--small menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+<nav aria-label="Main">
+<ul class="links" id="nav-links">
+{%- for item in site.nav %}
+<li><a href="{{ item.url }}"{% if item.section and page.url.startsWith(item.section) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+{%- endfor %}
+<li><a class="btn btn--quiet btn--small" href="/contact/">Book a diagnostic call</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main">
+{{ content | safe }}
+{% if close %}{% include "partials/close.njk" %}{% endif %}
+</main>
+
+<footer class="foot">
+<div class="container">
+<p class="foot__line">{{ site.tagline }}</p>
+<div class="foot__grid">
+<div>
+<a class="brand" href="/" aria-label="{{ site.name }}, home">{% include "partials/mark.njk" %}<span class="wordmark">passarel<b>·</b>la</span></a>
+<p class="foot__place">{{ site.place }}</p>
+<p>{{ site.languages }}.</p>
+</div>
+<nav aria-label="Footer">
+<ul class="foot__links">
+{%- for item in site.footerNav %}
+<li><a href="{{ item.url }}">{{ item.label }}</a></li>
+{%- endfor %}
+</ul>
+</nav>
+<div>
+<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+<p>{% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a>{% else %}LinkedIn{% endif %}</p>
+</div>
+</div>
+<p class="credits" data-credits>{{ site.credits }}</p>
+</div>
+</footer>
+{% include "scripts/menu.njk" %}
+{%- for s in scripts %}
+{% include "scripts/" + s + ".njk" %}
+{%- endfor %}
+</body>
+</html>

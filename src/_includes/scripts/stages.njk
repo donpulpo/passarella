@@ -1,0 +1,11 @@
+<script>
+(() => {
+  const pts = document.querySelectorAll('.arc__pt'), panels = document.querySelectorAll('.panels > li[data-stage]');
+  if (!pts.length || !('IntersectionObserver' in window)) return;
+  document.querySelector('.arc').classList.add('is-live');
+  const set = (n) => pts.forEach((p) => p.classList.toggle('is-on', p.dataset.stage === n));
+  set('0');
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) set(e.target.dataset.stage); }), { rootMargin: '-45% 0px -45% 0px' });
+  panels.forEach((p) => io.observe(p));
+})();
+</script>

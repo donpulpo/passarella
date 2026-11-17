@@ -1,0 +1,42 @@
+---
+layout: "layouts/base.njk"
+title: "Work: passarel·la"
+description: "Selected engagements and notes from passarel·la, from a founder-led startup to a Series C company."
+permalink: "/work/"
+close: {"title": "Facing a similar crossing?", "line": "Start with the diagnostic: two weeks, read-only."}
+---
+{% from "partials/macros.njk" import caseRow %}
+<section class="page-hero" aria-labelledby="hero-title">
+<div class="container">
+<h1 id="hero-title">Crossings we have already made.</h1>
+<p class="lead">From a founder-led startup to a Series C company. Client names appear only with permission.</p>
+</div>
+</section>
+
+<section class="sec--s" aria-labelledby="eng-title">
+<div class="container">
+<h2 id="eng-title" class="visually-hidden">Engagements</h2>
+<ul class="index">
+{%- for c in work %}
+{{ caseRow(c, loop.first) }}
+{%- endfor %}
+</ul>
+</div>
+</section>
+
+<section class="sec--l sec--rule" id="notes" aria-labelledby="notes-title">
+<div class="container split split--even">
+<div>
+<h2 id="notes-title">The lessons behind the work.</h2>
+<p class="lead">Notes from the engagements, written for the people who run them.</p>
+</div>
+<ul class="rows">
+{%- for n in collections.notes %}
+<li><a class="row row--single" href="{{ n.url }}"><h3 class="row__title">{{ n.data.title }}</h3></a></li>
+{%- endfor %}
+{%- for t in plannedNotes %}
+<li><div class="row row--single"><h3 class="row__title">{{ t }}</h3></div></li>
+{%- endfor %}
+</ul>
+</div>
+</section>

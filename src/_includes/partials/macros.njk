@@ -1,0 +1,14 @@
+{#- Breadcrumb: crumbs([["Offers", "/#offers"], ["Diagnostic"]]) -#}
+{% macro crumbs(items) %}
+<nav class="crumbs" aria-label="Breadcrumb"><ol>
+{%- for item in items %}{% if item[1] %}<li><a href="{{ item[1] }}">{{ item[0] }}</a></li>{% else %}<li aria-current="page">{{ item[0] }}</li>{% endif %}{% endfor -%}
+</ol></nav>
+{% endmacro %}
+
+{#- One engagement in the work index. A case without a page is a plain row, never a link back to /work/. -#}
+{% macro caseRow(c, lead=false) %}
+{%- set cls = "case" + (" case--lead" if lead else "") + ("" if c.url else " case--plain") -%}
+<li>{% if c.url %}<a class="{{ cls }}" href="{{ c.url }}">{% else %}<div class="{{ cls }}">{% endif -%}
+<span class="case__fig">{{ c.figure }}</span><div><h3 class="case__title">{{ c.title }}</h3><span class="case__line">{{ c.line }}</span>{% if c.url %}<span class="case__go">Read the case</span>{% endif %}</div><span class="case__meta"><span>{{ c.client }}</span><span>{{ c.role }}</span></span>
+{%- if c.url %}</a>{% else %}</div>{% endif %}</li>
+{% endmacro %}

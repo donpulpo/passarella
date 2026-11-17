@@ -1,0 +1,29 @@
+---
+layout: "layouts/base.njk"
+title: "Contact: passarel·la"
+description: "Book a diagnostic call or write to passarel·la in English, French or Spanish."
+permalink: "/contact/"
+scripts: ["form"]
+---
+<section class="hero hero--contact" aria-labelledby="hero-title">
+<div class="container hero__grid hero__grid--contact">
+<div>
+<h1 id="hero-title">Tell us where you are starting from.</h1>
+<p class="lead">A first call is enough to see whether the diagnostic, or something else, fits.</p>
+<ul class="contact-list contact-list--hero">
+<li><span class="k">Email</span><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+<li><span class="k">Book a call</span>{% if site.calendar %}<a class="link" href="{{ site.calendar }}">Choose a time</a>{% else %}<a class="link" href="#"><span class="fill" data-fill="calendar">Calendar link</span></a>{% endif %}</li>
+<li><span class="k">Languages</span><span>English, Français, Español</span></li>
+</ul>
+</div>
+<form class="form register" action="#" method="post" data-endpoint="" novalidate aria-labelledby="form-title">
+<h2 id="form-title">Or write to us here</h2>
+<div class="pair"><div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div></div>
+<div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+<div class="field"><label for="f-who">You are</label><select id="f-who" name="role"><option>A founder or product leader</option><option>A leadership team member</option><option>An investor or PE partner</option><option>Something else</option></select></div>
+<div class="field"><label for="f-msg">What are you working on?</label><textarea id="f-msg" name="message" rows="4"></textarea></div>
+<div><button class="btn" type="submit">Send</button><p class="form__help" id="form-help" aria-live="polite"></p></div>
+</form>
+</div>
+</section>

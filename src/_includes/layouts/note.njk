@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+{% from "partials/macros.njk" import crumbs %}
+<article aria-labelledby="hero-title">
+<section class="container"><div class="article article--head">
+{{ crumbs([["Notes", "/work/#notes"], [crumb or title]]) }}
+<h1 id="hero-title">{{ title }}</h1>
+<p class="lead">{{ lead }}</p>
+<div class="byline">
+<img src="/images/jerome-portrait.jpg" width="880" height="1100" alt="">
+<div><b>{{ author }}</b>{% if published %}<time datetime="{{ page.date.toISOString().slice(0, 10) }}">{{ published }}</time>{% else %}<span class="fill" data-fill="date">Date</span>{% endif %}</div>
+</div>
+</div></section>
+<section class="container"><div class="article article--body">
+<div class="prose">
+{{ content | safe }}
+</div>
+{% if related %}<div class="related">
+<p>The case behind this note</p>
+{% if related.url %}<a class="link" href="{{ related.url }}">{{ related.title }}</a>{% else %}<span class="related__title">{{ related.title }}</span>{% endif %}
+</div>{% endif %}
+</div></section>
+</article>

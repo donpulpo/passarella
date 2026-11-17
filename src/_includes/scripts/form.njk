@@ -1,0 +1,15 @@
+<script>
+// The form posts to data-endpoint. While it is empty, nothing is sent and the form says so.
+document.querySelectorAll('form[data-endpoint]').forEach((form) => {
+  const help = form.querySelector('[aria-live]');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const bad = [...form.querySelectorAll('input, select, textarea')].filter((f) => { const ok = f.checkValidity(); f.toggleAttribute('aria-invalid', !ok); return !ok; });
+    if (bad.length) { help.textContent = 'Add your name and a work email written as name@example.com.'; bad[0].focus(); return; }
+    if (!form.dataset.endpoint) { help.textContent = 'Nothing was sent: this form is not connected yet. Write to {{ site.email }} instead.'; return; }
+    fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form) })
+      .then((r) => { help.textContent = r.ok ? 'Thanks. We will reply to ' + form.email.value.trim() + '.' : 'That did not go through. Try again in a minute.'; })
+      .catch(() => { help.textContent = 'That did not go through. Try again in a minute.'; });
+  });
+});
+</script>

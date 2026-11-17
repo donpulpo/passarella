@@ -1,0 +1,26 @@
+{
+  "name": "passarel·la",
+  "tagline": "The bridge to AI-native.",
+  "email": "jerome@passarel.la",
+  "linkedin": null,
+  "calendar": null,
+  "place": "Founded in Valencia.",
+  "languages": "English, Français, Español",
+  "banner": { "text": "Two-week diagnostic, from €5,000", "url": "/diagnostic/" },
+  "credits": "Portrait: Bart Dykstra.",
+  "nav": [
+    { "label": "Approach", "url": "/#approach" },
+    { "label": "Offers", "url": "/#offers" },
+    { "label": "Work", "url": "/work/", "section": "/work/" },
+    { "label": "Notes", "url": "/work/#notes", "section": "/notes/" },
+    { "label": "About", "url": "/about/", "section": "/about/" }
+  ],
+  "footerNav": [
+    { "label": "Diagnostic", "url": "/diagnostic/" },
+    { "label": "Funds and PE", "url": "/funds/" },
+    { "label": "Work", "url": "/work/" },
+    { "label": "Notes", "url": "/work/#notes" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ]
+}

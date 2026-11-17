@@ -1,0 +1,7 @@
+<script>
+(() => {
+  const t = document.querySelector('.menu-toggle'), l = document.getElementById('nav-links');
+  if (!t || !l) return;
+  t.addEventListener('click', () => { const open = l.classList.toggle('is-open'); t.setAttribute('aria-expanded', String(open)); t.textContent = open ? 'Close' : 'Menu'; });
+})();
+</script>

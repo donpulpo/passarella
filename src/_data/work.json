@@ -1,0 +1,38 @@
+[
+  {
+    "figure": "−70%",
+    "title": "From firefighting to an agentic delivery engine",
+    "line": "Production incidents, with AI message quality up from 53% to 94%.",
+    "client": "Early-stage agentic sales platform",
+    "role": "Fractional CTO",
+    "url": "/work/agentic-delivery-engine/",
+    "home": true
+  },
+  {
+    "figure": "£500K",
+    "title": "Turning an AI threat into a funded roadmap",
+    "line": "Board investment in generative AI, and about 10 AI features shipped a year.",
+    "client": "Datamaran",
+    "role": "Co-founder and CTO",
+    "url": null,
+    "home": true
+  },
+  {
+    "figure": "0 → 50",
+    "title": "Rebuilding an intelligence platform around LLMs",
+    "line": "Engineers, through Series A, B and C, with a quality-gated move to LLMs.",
+    "client": "Datamaran",
+    "role": "Co-founder and CTO",
+    "url": null,
+    "home": true
+  },
+  {
+    "figure": "NIST",
+    "title": "Responsible AI governance, built in",
+    "line": "Based internal AI review, from an external assessment to stronger policies.",
+    "client": "Datamaran",
+    "role": "Co-founder and CTO",
+    "url": null,
+    "home": false
+  }
+]
