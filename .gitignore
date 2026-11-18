@@ -2,3 +2,6 @@ node_modules/
 _site/
 .hallmark/
 .DS_Store
+
+# Private notes, never in the public repo
+private/

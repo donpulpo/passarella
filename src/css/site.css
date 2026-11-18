@@ -6,7 +6,8 @@
 /* Hallmark · finish-review: subagent · 8 findings · 7 resolved 1 answered (8, heads kept verbatim on a redesign) · gap: none */
 /* Hallmark · swap: hero Corridor to Stage, the register needs seven columns beside the head */
 /* Hallmark · reworded "You don't need to start over to become AI-native" to "Become AI-native without starting over." · 58 names the hero headline, seven words at most */
-/* Hallmark · reworded "Find out where AI is quietly wrong in your company" to "Find out where AI is quietly wrong." · 58 and 38iii name the hero head and its saffron second sentence */
+/* Hallmark · reworded "Find out where AI is quietly wrong in your company" to "What two weeks will show you." · 58 and 38iii name the hero head; positioning moved from confession to check-up (owner decision, 2026-11-18) */
+/* Hallmark · reworded "Become AI-native without starting over." to "Your team uses AI. Is it paying off?" · owner decision, 2026-11-18: lead with the value question buyers already ask */
 /* Hallmark · reworded "A technical opinion your investment committee can rely on" to "Technical diligence your committee can rely on." · 58 names the hero headline */
 /* Hallmark · reworded "Six checkpoints.", "Three written deliverables.", "The silent-failure register." to the same words without the full stop · a label-length head takes no stop */
 /* Hallmark · reworded "Datamaran", "ZS Associates" to the company as the head with its years beneath · 63 names the middle-dot joins */
@@ -14,6 +15,7 @@
 /* Hallmark · dropped €5,000. · the work and case-study closes no longer repeat the price; the banner on those pages carries it (69) */
 /* Hallmark · waive 44c · diagnostic, funds, work, case study and note hold the Banner posture · the hero field is read once per stylesheet; on those pages the first section shows above the fold by design */
 /* Hallmark · waive 79 · diagnostic, funds, work, case study and note hold the Banner posture · the space under a Banner hero is the next section starting, not a dead band */
+/* Hallmark · waive 79 · home hero is a Stage, centred in the screen (.hero align-items: center), head and register share one row · the shorter headline leaves equal space above and below, not a dead band under the content */
 /* Hallmark · waive 49b · the links wrap to two lines at 320px only · "Do we need new tools, or better process?" and the note's related case title are real phrases kept verbatim */
 /* Hallmark · waive 59 · the note page alone · a Long Document: the byline and the first paragraph sit as one reading column */
 /* Hallmark · waive 78 · the note page alone · a Long Document whose h2s are inline subheads in the prose */
