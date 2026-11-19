@@ -323,6 +323,7 @@ div.row { cursor: default; }
   .table--stack tr { display: block; padding-block: var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); }
   .table--stack td { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: var(--space-sm); padding: var(--space-2xs) 0; border: 0; }
   .table--stack td::before { content: attr(data-th); color: var(--color-muted); font-weight: 400; font-size: var(--text-sm); }
+  .table--stack td[data-th=""] { display: block; }
   .contact-list > li { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xs); }
 }
 @media (prefers-reduced-motion: reduce) {
