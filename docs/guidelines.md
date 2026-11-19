@@ -51,7 +51,7 @@ Each one is in `src/css/site.css` and shown on a live page.
 | Index | `.index` + `caseRow` macro | engagements, figure first | home, work |
 | Figures | `.figures` | real numbers only, each with what it counts | home, funds, case study |
 | Facts strip | `.facts` | terms: duration, price, access | diagnostic, funds |
-| Numbered | `.numbered` | a real sequence or set (checkpoints, deliverables) | diagnostic |
+| Numbered | `.numbered` | a real sequence or set (dimensions, deliverables) | diagnostic |
 | Timeline | `.timeline` | a career or a history | about |
 | Close band | front matter `close:` | every page's ending | all but home |
 
@@ -60,7 +60,7 @@ Lists are never boxed cards. Sections part by space, a hairline or a band, varie
 ## 5. Copy
 
 - A page headline is seven words or fewer, and one sentence of twelve words or fewer sits under it.
-- Section heads say what the visitor will see. Prefer the page's own nouns ("Six checkpoints", "The silent-failure register") to category labels ("Our approach").
+- Section heads say what the visitor will see. Prefer the page's own nouns ("Five dimensions", "The silent-failure register") to category labels ("Our approach").
 - No middle dots joining phrases, no arrows on links, no em dashes. Use commas, line breaks or two columns.
 - Figures appear only when they're true and you can share them. Client figures need the client's permission.
 - Unknown facts are a dashed slot (`<span class="fill" data-fill="name">…</span>`), never an invented value. At most two per page.

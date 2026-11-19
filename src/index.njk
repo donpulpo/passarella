@@ -16,18 +16,17 @@ scripts: ["slots", "stages"]
 <a class="btn btn--quiet" href="/#approach">See the crossing</a>
 </div>
 </div>
-<figure class="register" data-slot="register" data-kind="product" data-alt="A page of the silent-failure register from a real diagnostic, client details removed">
-<figcaption><span class="register__title">The silent-failure register</span><span class="small">Sample rows</span></figcaption>
-<div class="scroll-x" tabindex="0" role="region" aria-label="Sample register rows">
-<table class="table table--register table--stack">
-<thead><tr><th scope="col">Live AI surface</th><th scope="col">Who owns it</th><th scope="col">How a wrong output would surface</th><th scope="col">Time to detect</th></tr></thead>
-<tbody>
-<tr><td data-th="Live AI surface">Support reply drafts</td><td data-th="Who owns it"><span class="blank">Owner</span></td><td data-th="How it surfaces">Customer complaint</td><td data-th="Time to detect">Weeks</td></tr>
-<tr><td data-th="Live AI surface">Lead scoring</td><td data-th="Who owns it">Nobody named</td><td data-th="How it surfaces">Not at all, today</td><td data-th="Time to detect">Unknown</td></tr>
-</tbody>
-</table>
-</div>
-<p class="register__note">Illustrative layout. One row per live AI surface in your company.</p>
+<figure class="register" aria-labelledby="answers-title">
+<figcaption><span class="register__title" id="answers-title">What two weeks will answer</span></figcaption>
+<ul class="ticks">
+<li>Does an idea reach customers sooner?</li>
+<li>Are we building the right thing?</li>
+<li>Is it lifting the whole team, or a few?</li>
+<li>Do pilots become products?</li>
+<li>Is the team focused on what customers pay for?</li>
+<li>Does the spend match the outcomes?</li>
+</ul>
+<p class="register__note">And the one most teams can’t answer: what would you lose if you switched it off tomorrow?</p>
 </figure>
 </div>
 </section>
@@ -47,10 +46,29 @@ scripts: ["slots", "stages"]
 </svg>
 </div>
 <ol class="panels">
-<li data-stage="0"><h3><span class="stage">Before</span>Evidence where there is opinion</h3><p>A two-week, read-only diagnostic. Six checkpoints and a silent-failure register showing where AI is quietly wrong, who owns it, and how long it would take to notice.</p></li>
+<li data-stage="0"><h3><span class="stage">Before</span>Evidence where there is opinion</h3><p>A two-week, read-only diagnostic. Five dimensions, from delivery to spend, and a silent-failure register showing where AI is quietly wrong, who owns it, and how long it would take to notice.</p></li>
 <li data-stage="1"><h3><span class="stage">During</span>An operating system, installed</h3><p>Agent rules, quality gates on every change, security guardrails and decision rights. Things that exist after the engagement and constrain the next release.</p></li>
 <li data-stage="2"><h3><span class="stage">After</span>You own it, we keep it current</h3><p>A do-it-yourself pathway, code and accounts in your name. Capability, not dependency. If you want, we stay on to keep it current as models and tools change.</p></li>
 </ol>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="register-title">
+<div class="container">
+<div class="head"><h2 id="register-title">The silent-failure register</h2><p class="lead">The other half of paying off: would you notice when it isn’t?</p></div>
+<figure class="register" data-slot="register" data-kind="product" data-alt="A page of the silent-failure register from a real diagnostic, client details removed">
+<div class="scroll-x" tabindex="0" role="region" aria-label="Sample register rows">
+<table class="table table--register table--stack">
+<thead><tr><th scope="col">Live AI surface</th><th scope="col">Who owns it</th><th scope="col">How a wrong output would surface</th><th scope="col">Time to detect</th></tr></thead>
+<tbody>
+<tr><td data-th="Live AI surface">Agent-written changes to billing code</td><td data-th="Who owns it">Whoever approved the pull request</td><td data-th="How it surfaces">A customer disputes an invoice</td><td data-th="Time to detect">Weeks</td></tr>
+<tr><td data-th="Live AI surface">Tests written by the same agent as the code</td><td data-th="Who owns it">Nobody named</td><td data-th="How it surfaces">It wouldn’t: the tests pass either way</td><td data-th="Time to detect">Never, until an incident</td></tr>
+<tr><td data-th="Live AI surface">A model update behind a product feature</td><td data-th="Who owns it">Nobody named</td><td data-th="How it surfaces">Quality drifts, and no test notices</td><td data-th="Time to detect">Unknown</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption class="register__note">Illustrative rows, not client data. One row per live AI surface in your company.</figcaption>
+</figure>
 </div>
 </section>
 
@@ -59,6 +77,9 @@ scripts: ["slots", "stages"]
 <div class="head"><h2 id="offers-title">Who we work with</h2></div>
 <ul class="rows">
 <li><a class="row" href="/diagnostic/"><span class="row__name">Software companies</span><div><h3 class="row__title">Agentic operating model diagnostic</h3><span class="row__line">Startups, scaleups and established software businesses already working with AI. Two weeks, read-only. Then, if you want, we help keep it current.</span></div></a></li>
+<li><div class="row"><span class="row__name" aria-hidden="true"></span><div><h3 class="row__title">Fractional CTO or CAIO</h3><span class="row__line">A senior technology or AI lead, part time, for as long as you need one. Architecture, delivery, hiring, and the board conversation.</span></div></div></li>
+<li><div class="row"><span class="row__name" aria-hidden="true"></span><div><h3 class="row__title">AI Act readiness assessment</h3><span class="row__line">Which of your AI uses the EU AI Act covers, what it asks of you, and what to fix first. Answers ready when enterprise customers ask.</span></div></div></li>
+<li><div class="row"><span class="row__name" aria-hidden="true"></span><div><h3 class="row__title">Strategy workshop and roadmap</h3><span class="row__line">A working session with your leadership team on where AI should change your product and your delivery. You leave with a sequenced roadmap.</span></div></div></li>
 <li><a class="row" href="/funds/"><span class="row__name">Funds and PE</span><div><h3 class="row__title">Technical diligence and in-house CTO</h3><span class="row__line">Diligence before a deal, a CTO after it, advice across a portfolio. A written opinion, a risk register, options with prices.</span></div></a></li>
 </ul>
 </div>
