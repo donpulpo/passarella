@@ -43,13 +43,6 @@
 <p class="foot__place">{{ site.place }}</p>
 <p>{{ site.languages }}.</p>
 </div>
-<nav aria-label="Footer">
-<ul class="foot__links">
-{%- for item in site.footerNav %}
-<li><a href="{{ item.url }}">{{ item.label }}</a></li>
-{%- endfor %}
-</ul>
-</nav>
 <div>
 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 <p>{% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a>{% else %}LinkedIn{% endif %}</p>

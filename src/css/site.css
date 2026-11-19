@@ -290,8 +290,7 @@ div.row { cursor: default; }
 /* ---------- Footer: statement ---------- */
 .foot { padding-block: var(--section-gap-s) var(--space-2xl); border-top: var(--rule-hair) solid var(--color-rule-soft); }
 .foot__line { max-width: 18ch; font-family: var(--font-display); font-weight: 500; font-size: var(--text-section); line-height: 1.1; letter-spacing: var(--tracking-display); }
-.foot__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr); gap: var(--space-xl) var(--gap-columns); margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-rule-soft); font-size: var(--text-sm); color: var(--color-ink-2); }
-.foot__links { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); margin: 0; padding: 0; list-style: none; }
+.foot__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-xl) var(--gap-columns); margin-top: var(--space-2xl); padding-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-rule-soft); font-size: var(--text-sm); color: var(--color-ink-2); }
 .foot a { color: var(--color-ink-2); text-decoration: none; transition: color var(--dur-short) var(--ease-out); }
 .foot a:hover { color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-accent); }
 .foot a:active { color: var(--color-accent); }

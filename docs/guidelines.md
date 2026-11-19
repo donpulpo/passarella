@@ -70,7 +70,7 @@ Lists are never boxed cards. Sections part by space, a hairline or a band, varie
 
 - **A note:** add `src/notes/<slug>.md` with `layout: layouts/note.njk`, `permalink: /notes/<slug>/`, `title`, `description`, `lead`, `author`, `date`, `published` (the date as readers see it), and `close`. It appears on the work page automatically. Delete its title from `src/_data/plannedNotes.json`.
 - **A case study:** add `src/work/<slug>.njk` (copy `agentic-delivery-engine.njk`) and set that entry's `url` in `src/_data/work.json`. The row becomes a link on the home and work pages.
-- **A page:** a `.njk` file in `src/` with `layout: layouts/base.njk`, `title`, `description`, `permalink` and `close`. Add it to `site.nav` or `site.footerNav` in `src/_data/site.json` if it belongs there.
+- **A page:** a `.njk` file in `src/` with `layout: layouts/base.njk`, `title`, `description`, `permalink` and `close`. Add it to `site.nav` in `src/_data/site.json` if it belongs in the top menu. The footer has no menu.
 - **Contact details, LinkedIn, the calendar link:** `src/_data/site.json`. Setting `calendar` or `linkedin` turns the placeholder into a link everywhere.
 
 ## 7. Checking a change

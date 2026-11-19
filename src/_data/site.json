@@ -14,13 +14,5 @@
     { "label": "Work", "url": "/work/", "section": "/work/" },
     { "label": "Notes", "url": "/work/#notes", "section": "/notes/" },
     { "label": "About", "url": "/about/", "section": "/about/" }
-  ],
-  "footerNav": [
-    { "label": "Diagnostic", "url": "/diagnostic/" },
-    { "label": "Funds and PE", "url": "/funds/" },
-    { "label": "Work", "url": "/work/" },
-    { "label": "Notes", "url": "/work/#notes" },
-    { "label": "About", "url": "/about/" },
-    { "label": "Contact", "url": "/contact/" }
   ]
 }
