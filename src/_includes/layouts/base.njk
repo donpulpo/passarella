@@ -23,7 +23,7 @@
 {%- for item in site.nav %}
 <li><a href="{{ item.url }}"{% if item.section and page.url.startsWith(item.section) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
 {%- endfor %}
-<li><a class="btn btn--quiet btn--small" href="/contact/">Book a diagnostic call</a></li>
+<li><a class="btn btn--quiet btn--small" href="{{ site.calendar }}" target="_blank" rel="noopener">Book a diagnostic call</a></li>
 </ul>
 </nav>
 </div>
