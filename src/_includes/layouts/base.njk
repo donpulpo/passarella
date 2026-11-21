@@ -17,13 +17,15 @@
 <header class="bar">
 <div class="container bar__inner">
 <a class="brand" href="/" aria-label="{{ site.name }}, home">{% include "partials/mark.njk" %}<span class="wordmark">passarel<b>·</b>la</span></a>
+<div class="bar__actions">
+<a class="btn btn--quiet btn--small" href="{{ site.calendar }}" target="_blank" rel="noopener">Book a diagnostic call</a>
 <button class="btn btn--quiet btn--small menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-<nav aria-label="Main">
+</div>
+<nav class="bar__nav" aria-label="Main">
 <ul class="links" id="nav-links">
 {%- for item in site.nav %}
 <li><a href="{{ item.url }}"{% if item.section and page.url.startsWith(item.section) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
 {%- endfor %}
-<li><a class="btn btn--quiet btn--small" href="{{ site.calendar }}" target="_blank" rel="noopener">Book a diagnostic call</a></li>
 </ul>
 </nav>
 </div>
@@ -45,7 +47,7 @@
 </div>
 <div>
 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-<p>{% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a>{% else %}LinkedIn{% endif %}</p>
+<p>{% if site.linkedin %}<a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}</p>
 </div>
 </div>
 <p class="credits" data-credits>{{ site.credits }}</p>
